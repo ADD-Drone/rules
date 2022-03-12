@@ -8,7 +8,13 @@ ADD-Drone팀 코드 관리 및 리뷰를 위한 규칙 모음
   - 관리
   - Naming rule
 - [Commit](#commit)
+  - log 작성 방법
+  - commit 단위
 - [Pull-Request](#pull-request)
+  - 형상관리
+  - issue 관리
+  - pr 시점
+  - merge 시점
 
 ---
 
@@ -53,3 +59,18 @@ chore: modify gitignore
 
 ## Pull-Request
 ### 형상관리
+코드 관리 및 리뷰를 위해 모든 프로젝트는 branch를 만들어서 작업진행
+
+즉, ***main branch에 직접 commit 금지***
+
+### issue 관리
+새로운 기능, 실험 또는 기존 코드 수정 사항 등 모든 작업 진행시 해당 사항에 대해 반드시 ***issue 등록*** 후 commit 로그에 해당 issue 번호 추가
+> 예시: `style: modify redundant code #61`
+
+### PR 시점
+***1-issue 1-pr 원칙***
+
+pr 등록 이후, 코드 리뷰 요청
+
+### Merge 시점
+코드 리뷰 완료 댓글을 받은 이후에 코드 주인이 직접 merge
